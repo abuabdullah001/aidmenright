@@ -65,6 +65,8 @@ use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\PasswordController;
 use FontLib\Table\Type\name;
 
+
+
 Route::get('/report', function () {
     return view('frontend.pages.report');
 })->name('report');
@@ -73,7 +75,6 @@ Route::get('/report', function () {
 Route::get('/whatwedo', function () {
     return view('frontend.pages.whatwedo');
 })->name('whatwedo');
-
 
 
 
@@ -186,15 +187,15 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/fetch-events2', [ExpenseController::class, 'fetchEvents2'])->name('fetch.events2');
 
     //  rabbi // withdrow
-    Route::get('Withdraw', [WithdrawController::class, 'index'])->name('Withdrawview');
-    Route::get('Apply-withdraw', [WithdrawController::class, 'create'])->name('applywithdraw');
-    Route::post('store-withdraw', [WithdrawController::class, 'store'])->name('storewithdraw');
-    Route::get('withd_application', [WithdrawController::class, 'application'])->name('withd_application');
-    Route::get('deletewithdraw/{id}', [WithdrawController::class, 'destroy']);
-    Route::get('approvewithraw/{id}', [WithdrawController::class, 'approvewithraw']);
-    Route::get('unapprovewithdro/{id}', [WithdrawController::class, 'unapprovewithdro']);
-    Route::get('destroywithdraw/{id}', [WithdrawController::class, 'destroywithdraw']);
-    Route::post('widthraw_confirmmess', [WithdrawController::class, 'widthraw_confirmmess'])->name('widthraw_confirmmess');
+    // Route::get('Withdraw', [WithdrawController::class, 'index'])->name('Withdrawview');
+    // Route::get('Apply-withdraw', [WithdrawController::class, 'create'])->name('applywithdraw');
+    // Route::post('store-withdraw', [WithdrawController::class, 'store'])->name('storewithdraw');
+    // Route::get('withd_application', [WithdrawController::class, 'application'])->name('withd_application');
+    // Route::get('deletewithdraw/{id}', [WithdrawController::class, 'destroy']);
+    // Route::get('approvewithraw/{id}', [WithdrawController::class, 'approvewithraw']);
+    // Route::get('unapprovewithdro/{id}', [WithdrawController::class, 'unapprovewithdro']);
+    // Route::get('destroywithdraw/{id}', [WithdrawController::class, 'destroywithdraw']);
+    // Route::post('widthraw_confirmmess', [WithdrawController::class, 'widthraw_confirmmess'])->name('widthraw_confirmmess');
 
     //  admin job approve
     Route::get('/Job-Circular', [JobController::class, 'Job_Circular']);
