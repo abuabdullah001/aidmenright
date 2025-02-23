@@ -224,7 +224,7 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
-        
+
                 <!-- Profile -->
                 <li class="nav-item">
                     <a href="/sponserd-list" class="nav-link {{ Request::is('company_profile') ? 'active' : '' }}">
@@ -232,7 +232,7 @@
                         <p>Profile</p>
                     </a>
                 </li>
-        
+
                 <!-- Paid List -->
                 <li class="nav-item">
                     <a href="/paid-list" class="nav-link {{ Request::is('paid-list') ? 'active' : '' }}">
@@ -240,7 +240,7 @@
                         <p>Paid List</p>
                     </a>
                 </li>
-        
+
                 <!-- Due List -->
                 <li class="nav-item">
                     <a href="/due-list" class="nav-link {{ Request::is('due-list') ? 'active' : '' }}">
@@ -250,7 +250,7 @@
                 </li>
             </ul>
         </nav>
-        
+
     @endif
     </div>
     <!-- /.sidebar -->
