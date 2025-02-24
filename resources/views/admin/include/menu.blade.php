@@ -12,6 +12,7 @@
         @else
         <img class="brand-image img-circle elevation-3" style="opacity: .8" style="width: 50%"
             src="{{asset('/images/'. Auth::user()->image)}}">
+
         @endif
         <span class="" style="margin-left: 80px">{{ isset(Auth::user()->name) ? Auth::user()->name : '' }}</span>
     </a>

@@ -233,7 +233,7 @@ section#testimonial {
                             <h4 class="panel-title">
                                 <a role="button" data-toggle="collapse" class="" data-parent="#accordion" href="#collapseOne"
                                     aria-expanded="false" aria-controls="collapseOne">
-                                    Chairman Message dfdfd
+                                    Chairman Message
                                 </a>
                             </h4>
                         </div>

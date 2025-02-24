@@ -429,12 +429,13 @@
         <div class="navbar-container" id="topBar">
             <!-- Logo -->
             <div class="logo">
-                <a class="" href="{{ url('/') }}">
-
+                {{-- <a class="" href="{{ url('/') }}">
                     <img style="height: 100px; " class="img-responsive img-fluid navbar-brand"
                         src="{{ URL::to('/') }}/images/2a6585d4-e9d0-40ef-98dd-d3afb105b76e.jpg" alt="">
-                </a>
+                </a> --}}
+                <h3 style="color: black">AidForMen</h3>
             </div>
+
     @endforeach
     <div class="hamburger" id="hamburger">&#9776;</div>
 
